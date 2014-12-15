@@ -48,6 +48,3 @@ var runGame = function(){
         document.body.innerHTML = document.body.innerHTML + "<br><h1>" + compare(userChoice, computerChoice) + "!!</h1>";
     }
 }
-
-console.log("Renato".charAt(5));
-console.log("O Renato está na aula".substr(0,10));
