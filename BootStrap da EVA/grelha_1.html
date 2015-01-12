@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Template de uma grelha para o bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<style>
+		body {
+			padding: 0 16px;
+		}
+		.container {
+		  padding: 0 1em;
+		}
+		
+		h4 {
+		  margin-top: 1.5em;
+		}
+		.row {
+		  margin-bottom: 1.5em;
+		}
+		.row .row {
+		  margin-top: 0.8em;
+		  margin-bottom: 0;
+		}
+		[class*="col-"] {
+		  padding: 1em 0;
+		  background-color: rgba(255,195,13,.3);
+		  border: 1px solid rgba(255,195,13,.4);
+}
+
+	</style>
+
+  </head>
+
+<body>
+  <div class="container">
+    <h1>O nosso exemplo</h1>
+      <p>Usar as características responsivas do bootstrap <a href="http://getbootstrap.com/css/#responsive-utilities" target="_blank">nomeadamente a sua visibilidade</a>. Para isso criamos uns exemplos simples para percebermos a forma como as várias grelhas do bootstrap se comportam em conjunto ou em separado. A primeira linha combina as 4 grelhas na mesma linha, dependendo do tamanho da janela do browser.</p>
+      <p class="visible-lg">lg indica a grelha maior do bootstrap. Esta grelha empilha horizontalmente quando &lt; 1200px. </p>
+      <p class="visible-md">md indica a grelha média do bootstrap.  Esta grelha empilha horizontalmente quando &lt; 992px. </p>
+      <p class="visible-sm">sm indica a grelha pequena do bootstrap.  Esta grelha empilha horizontalmente quando &lt; 768px. </p>
+      <p class="visible-xs">xs indica a grelha minima do bootstrap. Esta grelha é sempre horizontal. </p>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-1 col-sm-5 col-xs-5">
+        	<span class="visible-lg">.col-lg-4</span>
+            <span class="visible-md">.col-md-1</span>
+            <span class="visible-sm">.col-sm-5</span>
+            <span class="visible-xs">.col-xs-5</span>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-1 col-xs-6">
+        	<span class="visible-lg">.col-lg-4</span>
+            <span class="visible-md">.col-md-5</span>
+            <span class="visible-sm">.col-sm-1</span>
+            <span class="visible-xs">.col-xs-6</span>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-1">
+        	<span class="visible-lg">.col-lg-4</span>
+            <span class="visible-md">.col-md-6</span>
+            <span class="visible-sm">.col-sm-6</span>
+            <span class="visible-xs">.col-xs-1</span>
+       </div>
+      </div> <!-- end row -->
+      
+      <h2>xs Grid Alone</h2>
+        <div class="row">
+            <div class="col-xs-5">
+                <p>.col-xs-5</p>
+            </div>
+            <div class="col-xs-6">
+            	<p>.col-xs-6</p>
+            </div>
+            <div class="col-xs-1">
+                <p>.col-xs-1</p>
+           </div>
+      	</div> <!-- end row -->
+      
+        <h2>sm Grid Alone</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>.col-sm-5</p>
+            </div>
+            <div class="col-sm-1">
+            	<p>.col-sm-1</p>
+            </div>
+            <div class="col-sm-6">
+                <p>.col-sm-6</p>
+           </div>
+      	</div> <!-- end row -->
+        
+        <h2>md Grid Alone</h2>
+        <div class="row">
+            <div class="col-md-1">
+                <p>.col-md-1</p>
+            </div>
+            <div class="col-md-5">
+            	<p>.col-md-5</p>
+            </div>
+            <div class="col-md-6">
+                <p>.col-md-6</p>
+           </div>
+      	</div> <!-- end row -->
+        
+        <h2>lg Grid Alone</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <p>.col-lg-4</p>
+            </div>
+            <div class="col-lg-4">
+            	<p>.col-lg-4</p>
+            </div>
+            <div class="col-lg-4">
+                <p>.col-lg-4</p>
+           </div>
+      	</div> <!-- end row -->
+      
+      
+	</div> <!-- /container -->
+  </body>
+</html>
