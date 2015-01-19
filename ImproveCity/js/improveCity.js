@@ -1,13 +1,14 @@
 /*********************************************************
-*	As nossas classes e os seus construtores
+*	Object Constructors
 *	
 *	
 *	NA 17/01/2015
 **********************************************************/
 
-/*
+/*********************************************************
 *	Issue
 */
+
 function Issue(){
 	this.title = null;
 	this.description = null;
@@ -17,11 +18,11 @@ function Issue(){
 	this.status = null;
 	this.likes = 0;
 	this.dislikes = 0;
-	this.owner = {};
-	this.workgroup = {};
+	this.owner = null;
+	this.workgroup = null;
 }
 
-// Este é o que devemos usar para a criação de um novo Issue
+// This
 function Issue(owner, title, description, type, category){
 	this.owner = owner;
 	this.title = title;
@@ -48,31 +49,47 @@ function Issue(owner, title, description, type, category, creationDate, status, 
 	this.workgroup = workgroup;
 }
 
-function Issue(issue){
-	this.owner = issue.owner;
-	this.title = issue.title;
-	this.description = issue.description;
-	this.type = issue.type;
-	this.category = issue.category;
-	this.creationDate = issue.creationDate;
-	this.status = issue.status;
-	this.likes = issue.likes;
-	this.dislikes = issue.dislikes;
-	this.workgroup = issue.workgroup;
-}
 
-/*
+/**********************************************************
 *	WorkGroup
 */
+
+// Methods to use
+var addPossibleDate = function(date){
+	this.possibleDates.push(date);
+};
+
+var addVolunteer = function(volunteer){
+	this.volunteers.push(volunteer);
+};
+
+var addToolsMaterials = function(toolMaterial){
+	this.toolsMaterials.push(toolMaterial);
+};
+
 function WorkGroup(){
 	this.duration = null;
 	this.executionDate = null;
 	this.possibleDates = [];
 	this.volunteers = [];
 	this.toolsMaterials = [];
+	this.addPossibleDate = addPossibleDate;
+	this.addVolunteer = addVolunteer;
+	this.addToolsMaterials = addToolsMaterials;
 }
 
-/*
+function WorkGroup(duration, executionDate, possibleDates, volunteers, toolsMaterials){
+	this.duration = duration;
+	this.executionDate = executionDate;
+	this.possibleDates = possibleDates;
+	this.volunteers = volunteers;
+	this.toolsMaterials = toolsMaterials;
+	this.addPossibleDate = addPossibleDate;
+	this.addVolunteer = addVolunteer;
+	this.addToolsMaterials = addToolsMaterials;
+}
+
+/*********************************************************
 *	ToolMaterial
 */
 function ToolMaterial(){
@@ -82,7 +99,7 @@ function ToolMaterial(){
 	this.measureUnit = null;
 }
 
-/*
+/*********************************************************
 *	User
 */
 function User(){
@@ -97,7 +114,7 @@ function User(){
 	this.status = null;
 }
 
-/*
+/*********************************************************
 *	Volunteer
 */
 function Volunteer(){
