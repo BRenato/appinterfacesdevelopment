@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Test</title>
+	<script src="js/jquery-1.11.2.js"></script> 
+	<script> 
+    $(  function(){
+        $("#includedContent").load("divTest.html", function() {
+        alert( "Load terminado!" );
+        });
+    });
+    </script> 
+ </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>

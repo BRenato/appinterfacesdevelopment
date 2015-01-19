@@ -1,0 +1,277 @@
+.lead-footer{
+    margin-bottom: 10px;
+}
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+}
+.screen-canvas{
+	background-color: white;
+	border-color: red;
+	border-style: dashed;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+.container{
+    width: 100%;
+    padding-bottom: 15px;
+    height: 100%;
+}
+
+.title{
+    padding-top: 10px;
+}
+.navbar-style{
+    display: inline-block;
+}
+.page-header{
+    padding-bottom: 0px;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #33B5E5;
+}
+
+.page-footer{
+    margin-top:20px;
+    margin: 20px 0 0;
+    border-bottom: 2px solid #33B5E5; 
+}
+
+#top{
+height: 5%;
+}
+#middle{
+height: 85%;
+}
+#bottom{
+height: 10%;
+}
+.improve-text{
+    text-decoration: none;
+    font-size: 22;
+}
+.improve-menu-text{
+}
+.improve-menu-title-text{
+    padding-top: 12px !important;
+    font-size: 20px !important;
+}
+/* buttons in the screen bottom! */
+.buttons{
+    height: 100%;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+#btn_left{
+    float: left;
+    height: 50%;
+    width: 33%;
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+    top: 50%;
+}
+#btn_center{
+    float: left;
+    height: 50%;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+#btn_right{
+    float: right;
+    height: 50%;
+    width: 33%;
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+    top: 50%;
+}
+.btn-img{
+    width: 40px;
+    height: 40px;
+}
+
+/*_media quaries_*/
+
+
+@media (min-width: 290px) {
+
+    .title{
+        margin-left: 100px;
+    }
+    .lead{
+        font-size: 21px;
+    }
+}
+/*FOR LATERAL MENU SIZE AFTER OPEN*/
+@media(max-width: 350px){
+      .navmenu{
+        width: 150px !important;
+    }
+}
+/*END HERE*/
+
+@media (max-height: 620px){
+    .page-header{
+        padding-bottom: 10px
+    }
+}
+@media (max-height: 530px){
+    .page-header{
+        padding-bottom: 25px
+    }
+}
+@media (max-height: 217px){
+    .page-header{
+        padding-bottom: 30px
+    }
+}
+
+
+
+@media (max-height: 685px){
+    #middle{
+        height: 80%;
+    }
+}
+@media (max-height: 530px){
+    #middle{
+        height: 75%;
+    }
+}
+@media (max-height: 415px){
+    #middle{
+        height: 70%;
+    }
+}
+
+/*BUTTONS*/
+    /*WIDTH CONTROL*/
+@media(max-width: 630px){
+    .btn-img{
+        width: 28px !important;
+        height: 28px !important;
+    }
+    .improve-text{
+        font-size: 20;
+    }
+}
+@media(max-width: 570px){
+    .btn-img{
+        width: 26px !important;
+        height: 26px !important;
+    }
+    .improve-text{
+        font-size: 18;
+    }
+}
+@media(max-width: 530px){
+    .btn-img{
+        width: 22px !important;
+        height: 22px !important;
+    }
+    .improve-text{
+        font-size: 16;
+    }
+}
+@media(max-width: 455px){
+    .btn-img{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .improve-text{
+        font-size: 14;
+    }
+}
+@media(max-width: 410px){
+    .btn-img{
+        width: 16px !important;
+        height: 16px !important;
+    }
+    .improve-text{
+        font-size: 12;
+    }
+    #btn_center{
+        padding-top: 2px;
+    }
+}
+@media(max-width: 355px){
+    .btn-img{
+        width: 17px !important;
+        height: 17px !important;
+    }
+    .improve-text{
+        font-size: 10;
+    }
+    #btn_center{
+        padding-top: 5px;
+    }
+}
+@media(max-width: 316px){
+    .btn-img{
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .improve-text{
+        font-size: 9;
+    }
+    #btn_center{
+        padding-top: 6px;
+    }
+}
+
+    /*HEIGHT CONTROL*/
+@media(max-height: 830px){
+    #btn_left, #btn_center, #btn_right{
+        top: 45%;
+    }
+}
+
+@media(max-height: 750px){
+    .btn-img{
+        width: 28px;
+        height: 28px;
+    }
+    .improve-text{
+        font-size: 16;
+    }
+}
+@media(max-height: 685px){
+    #btn_left, #btn_center, #btn_right{
+        top: 80%;
+    }
+}
+@media(max-height: 530px){
+    #btn_left, #btn_center, #btn_right{
+        top: 125%;/*HAMMER STRIKE*/
+    }
+    .btn-img{
+        width: 26px;
+        height: 26px;
+    }
+    .improve-text{
+        font-size: 14;
+    }
+}
+@media(max-height: 480px){
+    .btn-img{
+        width: 14px;
+        height: 14px;
+    }
+    .improve-text{
+        font-size: 9;
+    }
+    #btn_left, #btn_center, #btn_right{
+        top: 155%;/*HAMMER STRIKE*/
+    }
+}
