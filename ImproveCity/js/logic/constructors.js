@@ -9,19 +9,6 @@
 *	Issue
 */
 
-function Issue(){
-	this.title = null;
-	this.description = null;
-	this.type = null;
-	this.category = null;
-	this.creationDate = null;
-	this.status = null;
-	this.likes = 0;
-	this.dislikes = 0;
-	this.owner = null;
-	this.workgroup = null;
-}
-
 
 // This is the one to use most commonly when creating a new issue
 function Issue(owner, title, description, type, category){
@@ -34,21 +21,22 @@ function Issue(owner, title, description, type, category){
 	this.status = 'Initial';
 	this.likes = 0;
 	this.dislikes = 0;
-	this.workgroup = new WorkGroup();
+	this.workgroup = null;
 }
 
-function Issue(owner, title, description, type, category, creationDate, status, likes, dislikes, workgroup){
-	this.owner = owner;
-	this.title = title;
-	this.description = description;
-	this.type = type;
-	this.category = category;
-	this.creationDate = creationDate;
-	this.status = status;
-	this.likes = likes;
-	this.dislikes = dislikes;
-	this.workgroup = workgroup;
-}
+Issue.prototype.nextStatus = function(){
+	var possibleStatus = ['I', 'A', 'O', 'F'];
+
+	this.status = possibleStatus[possibleStatus.indexOf(this.status) + 1];
+};
+
+Issue.prototype.incrementLikes = function(){
+	this.likes += 1;
+};
+
+Issue.prototype.incrementDislikes = function(){
+	this.dislikes += 1;
+};
 
 
 /**********************************************************
@@ -72,17 +60,17 @@ function WorkGroup(duration, executionDate, possibleDates, volunteers, toolsMate
 	this.toolsMaterials = toolsMaterials;
 }
 
-WorkGroup.prototype.addPossibleDate = function(date){
-	this.possibleDates.push(date);
-};
+// WorkGroup.prototype.addPossibleDate = function(date){
+// 	this.possibleDates.push(date);
+// };
 
-WorkGroup.prototype.addVolunteer = function(volunteer){
-	this.volunteers.push(volunteer);
-};
+// WorkGroup.prototype.addVolunteer = function(volunteer){
+// 	this.volunteers.push(volunteer);
+// };
 
-WorkGroup.prototype.addToolsMaterials = function(toolMaterial){
-	this.toolsMaterials.push(toolMaterial);
-};
+// WorkGroup.prototype.addToolsMaterials = function(toolMaterial){
+// 	this.toolsMaterials.push(toolMaterial);
+//};
 
 /*********************************************************
 *	ToolMaterial
@@ -117,3 +105,13 @@ function Volunteer(){
 	this.toolsMaterials = [];
 	this.possibleDates = [];
 }
+
+function Volunteer(user, toolsMaterials, possibleDates){
+	this.user = user;
+	this.toolsMaterials = toolsMaterials;
+	this.possibleDates = possibleDates;
+}
+
+// Volunteer.prototype.addPossibleDate = function(date){
+// 	this.possibleDates.push(date);
+// };
