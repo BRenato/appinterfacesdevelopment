@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+
+.navbar-toggle {
+  margin: 0px;
+  border: 2px solid;
+  margin-left: -2px;/*border value*/
+  float: left;
+  max-width: 55px;
+}
+
+.navmenu-brand{
+  text-align: center;
+}
+
+.navmenu {
+  z-index: 1;
+  background-color: #F4F4F4;
+  width: 300px;s
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+  .canvas {
+    padding: 0;
+  }
+}
+
+

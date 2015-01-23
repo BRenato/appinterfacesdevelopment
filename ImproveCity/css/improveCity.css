@@ -1,0 +1,148 @@
+.lead-footer{
+    margin-bottom: 10px;
+}
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+}
+.screen-canvas{
+	background-color: white;
+	/*border-color: red;*/     /*TO REMOVE*/
+	/*border-style: dashed;*/  /*TO REMOVE*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.screen-canvas-borders{
+    border-top: 2px solid #33B5E5;
+    border-bottom: 2px solid #33B5E5;
+}
+.container{
+    width: 100%;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.title{
+    padding-top: 10px;
+}
+.navbar-style{
+    display: inline-block;
+}
+.page-header{
+    padding-bottom: 0px;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #33B5E5;
+}
+
+.page-footer{
+    margin-top:20px;
+    margin: 20px 0 0;
+    border-bottom: 2px solid #33B5E5; 
+}
+
+#top{
+height: 7%;
+}
+#middle{
+height: 86%;
+}
+#bottom{
+height: 7%;
+}
+.improve-text{
+    text-decoration: none;
+    font-size: 22;
+}
+.improve-menu-text{
+}
+.improve-menu-title-text{
+    padding-top: 12px !important;
+    font-size: 20px !important;
+}
+
+/* buttons in the screen bottom! */
+.buttons{
+    height: 100%;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+/*TOP*/
+#btn_left_top{
+    float: left;
+    height: 100%;
+    min-height: 100%;
+    width: 10%;
+    min-width: 50px;
+    text-align: left;
+    position: relative;
+    margin-left: 10px;
+}
+#btn_center_top{
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+#btn_right_top{
+    float: right;
+    height: 100%;
+    width: 18%;
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+    margin-right: 15px;
+}
+
+/*BOTOOM*/
+#btn_left{
+    float: left;
+    height: 100%;
+    width: 33%;
+    text-align: left;
+    position: relative;
+}
+#btn_center{
+    float: left;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    position: relative;
+}
+#btn_right{
+    float: right;
+    height: 100%;
+    width: 33%;
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+}
+.btn-img{
+    width: 40px;
+    height: 40px;
+}
+
+/*_media quaries_*/
+
+
+@media (min-width: 290px) {
+
+    .title{
+        margin-left: 100px;
+    }
+    .lead{
+        font-size: 21px;
+    }
+}
+/*FOR LATERAL MENU SIZE AFTER OPEN*/
+@media(max-width: 350px){
+      .navmenu{
+        width: 150px !important;
+    }
+}
+/*END HERE*/

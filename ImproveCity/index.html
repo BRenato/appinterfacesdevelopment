@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>:: improveCity ::</title>
+
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+  <script src="js/jquery-1.11.2.js"></script> 
+   <script src="js/jquery-1.11.2.min.js"></script> 
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/improveCity.css">
+
+	<!-- Theme to navMenu-->
+	<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navmenu-reveal.css">
+	<style type="text/css"></style>
+
+</head>
+
+<body style="">
+    <div class="navmenu navmenu-default navmenu-fixed-left" id="navmenu">
+      <p class="navmenu-brand improve-menu-title-text" href="#" id="menuLabel">MENU</p>
+      <ul class="nav navmenu-nav">
+        <li><a class = "menu-items improve-menu-text" href="#">_screen[1]</a></li>
+        <li><a class = "menu-items improve-menu-text" href="#">_screen[2]</a></li>
+        <li><a class = "menu-items improve-menu-text" href="#">_screen[3]</a></li>
+      </ul>
+    </div>
+
+    <div class="canvas" style="" id="background">
+      
+      <div id="top">  
+        <div id="btn_left_top" class="screen-canvas navbar-default"> <!--navbar navbar-default-->
+        <button type="button" class="navbar-toggle screen-canvas" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+        <div id="btn_center_top" class="screen-canvas"><p class="lead title improve-text improve-menu-title-text" id="labelTop"></p></div>
+        <div id="btn_right_top" class="screen-canvas"></div>
+      </div>
+      
+      <div id="middle">
+        <div class="container">          
+         <!-- <div class="page-header"></div>-->
+          
+          <!-- ============= SCREENS TARGET ! ============= -->
+          <div class="screen-canvas screen-canvas-borders" id ="screen-target">
+
+                  <!-- === ALLWAYS AN EMPTY BLOCK ===-->
+          </div>
+          <!-- ================ ENDS HERE ! =============== -->
+
+         <!-- <div class="page-footer"></div>-->
+        </div>
+      </div>
+      
+      <!-- === BUTTONS ===-->
+
+      <div id="bottom" class="buttons">
+        <div id="btn_left" class="screen-canvas">
+          <img id="imageButtonBack"></img>
+          <a href="" class="improve-text" id="btnLeft"></a>
+        </div>
+        <div id="btn_center" class="screen-canvas"><a href="#" id="btnCenter"></a></div>
+        <div id="btn_right" class="screen-canvas">
+          <a href="#" id="btnSubmit"></a>
+          <img id="imageButtonSubmit"></img>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/screensLoad.js"></script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+
+
+</body>
+</html>
